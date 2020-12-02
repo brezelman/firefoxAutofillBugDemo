@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="external.js"></script>
+	<title>Firefox autofill credentials with external input handler bug demo</title>
+</head>
+<body>
+	<form action="#" method="post">
+		<input type="text" placeholder="Username" required="" name="username" oninput="validate(this.value)" />
+		<input type="password" placeholder="Password" required="" name="password" />
+		<input type="submit" value="Log in" />
+	</form>
+</body>
+</html>
