@@ -10,14 +10,10 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:attribute>
-			
 			<xsl:attribute name="placeholder">
 				<xsl:value-of select="@type" />
 			</xsl:attribute>
-
-			<xsl:attribute name="oninput">
-				<xsl:text>onInput(event)</xsl:text>
-			</xsl:attribute>
+			<xsl:attribute name="oninput">onInput(event)</xsl:attribute>
 		</input>
 	</xsl:template>
 
@@ -25,11 +21,9 @@
 		<html xmlns="http://www.w3.org/1999/xhtml">
 			<head>
 				<meta http-equiv="content-type" content="text/xml; charset=ISO-8859-1" />
-				<title><xsl:value-of select="/Maske/Title" /></title>
-
+				<title><xsl:value-of select="/Mask/Title" /></title>
 				<script type="text/javascript" src="login.js"></script>
 			</head>
-
 			<body>
 				<xsl:apply-templates select="child::Mask" />
 			</body>
